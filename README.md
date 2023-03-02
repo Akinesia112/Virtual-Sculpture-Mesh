@@ -4,8 +4,8 @@ Locate the points distributed in space with hyperbolic parabolic surface, then g
 
   ![image](result_screenshot_VF2.png) 
 
-  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces
+  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces ( 2 subdivision steps)
   
   ![image](result_screenshot_VF6.png) 
 
-  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces
+  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces ( 6 subdivision steps)
