@@ -1,4 +1,4 @@
-# Virtual Sculpture:Capsule & Hyperbolic Polyhedron
+# Virtual_Sculpture:Capsule and Hyperbolic_Polyhedron
 
 ▌Introduction
 
