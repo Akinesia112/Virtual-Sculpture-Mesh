@@ -1,4 +1,4 @@
-# ual_Sculpture-Capsule-Hyperbolic_Polyhedron
+# Virtual_Sculpture:Capsule-Hyperbolic_Polyhedron
 
 ▌Introduction
 
