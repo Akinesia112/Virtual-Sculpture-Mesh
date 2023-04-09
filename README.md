@@ -13,4 +13,6 @@ Locate the points of mesh distributed in space with hyperbolic parabolic surface
 
   * hyperbolic parabolic surface consist of polyhedrons with vertices & faces ( 6 subdivision steps)
   
-▌Random Capsule
+▌Random Walk Capsule
+
+This part generates a 3D model of a random walk using the COMPAS library. A random walk is a mathematical model that describes a path that consists of a series of random steps. In this case, the random steps are simulated using a stochastic process that generates random vectors in 3D space. The resulting path is represented as a sequence of capsules, which are 3D shapes that consist of a cylinder and two hemispheres on each end.
