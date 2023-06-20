@@ -68,10 +68,8 @@ To ensure safety and control over the robot's movements, we have implemented cer
 This project represents an exciting blend of robotics, art, and photography. It demonstrates the ability of robots to transcend their traditional industrial applications and contribute to the realm of creative expression. Through the medium of light painting, the KUKA Robot showcases its versatility and the endless possibilities that arise from the collaboration of technology and art.
 
   ![image](KukaPRC_Spiral.png) 
-  
-  ![image](light_painting_1.png) 
-  
-  ![image](light_painting_2.png) 
+  ![image](light_painting_1.jpg) 
+  ![image](light_painting_2.jpg) 
   
   * The results of Light Painting with KUKA Robot in the spiral movement path of geometry.
 
