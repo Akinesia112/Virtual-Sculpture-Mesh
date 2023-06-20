@@ -1,14 +1,14 @@
 # Virtual_Sculpture
 
-Using COMPAS Data Structure Mesh with a python script to generate a virtual sculpture in Computational Geometry. 
+Using COMPAS Data Structure Mesh with a Python script to generate a virtual sculpture in Computational Geometry. 
 
 ▌ Hyperbolic Parabolic Polyhedron
 
-Locate the points of mesh distributed in space with hyperbolic parabolic surface, then generate polyhedron with random radius, vertices & faces according to point coordinates, to obtain hyperbolic parabolic surface asteroid belt with single solid mesh, non-manifold edges and self-intersecting. The polyhedrons were subdivided into a mesh with the Catmull–Clark algorithm. The Catmull–Clark scheme is a technique used in 3D computer graphics to create curved surfaces by using subdivision surface modeling.
+Locate the points of mesh distributed in space with hyperbolic parabolic surface, then generate polyhedron with random radius, vertices & faces according to point coordinates, to obtain a hyperbolic parabolic surface asteroid belt with single solid mesh, non-manifold edges, and self-intersecting. The polyhedrons were subdivided into a mesh with the Catmull–Clark algorithm. The Catmull–Clark scheme is a technique used in 3D computer graphics to create curved surfaces by using subdivision surface modeling.
 
-This code imports several libraries such as math, random, compas, and compas.geometry, as well as specific functions from compas.geometry, compas_cgal.subdivision, and compas_view2.app. It also imports a mesh from a file named 'hypar.obj' using the compas.datastructures.Mesh.from_obj() method.
+This code imports several libraries such as math, random, compas, and compas.geometry, as well as specific functions from compas.geometry, compas_cgal.subdivision, and compas_view2.app. It also imports a mesh from a file named 'hyper.obj' using the compas.datastructures.Mesh.from_obj() method.
 
-The code creates a 3D viewer using the compas_view2.app.App() method. It then loops through all faces in the imported mesh and calculates the centroid and frame of each face. Within the loop, the code also generates a random float value between 0.2 and 0.6, which is used to create a box with dimensions r x r x r centered on the face's centroid and oriented with the face's frame.
+The code creates a 3D viewer using compas_view2.app.App() method. It then loops through all faces in the imported mesh and calculates the centroid and frame of each face. Within the loop, the code also generates a random float value between 0.2 and 0.6, which is used to create a box with dimensions r x r x r centered on the face's centroid and oriented with the face's frame.
 
 The code then applies the Catmull-Clark subdivision algorithm from the compas_cgal.subdivision library to the generated box, which refines the mesh and returns new vertices and faces. The Polyhedron class from compas.geometry is used to create a polyhedron object from the new vertices and faces. The polyhedron is then translated by a vector of [4,0,0] using the Translation.from_vector() method from compas.geometry, and added to the viewer using the viewer.add() method.
 
@@ -18,11 +18,11 @@ Finally, the viewer.run() method is called, which opens the 3D viewer and displa
 >
 >2.Imports the compas library, which is a computational framework for architecture and engineering.
 >
->3.Defines a 3D mesh object named mesh by reading an OBJ file called hypar.obj from the compas data directory using the cd.Mesh.from_obj() method.
+>3.Defines a 3D mesh object named mesh by reading an OBJ file called hyper.obj from the compas data directory using the cd.Mesh.from_obj() method.
 >
 >4.Initializes a 3D viewer object using the compas_view2.app module.
 >
->5.Iterates through each face of the mesh, calculates the centroid and plane of each face, and generates 64 random radiuses of varying sizes using the cg.Box() method.
+>5. Iterates through each face of the mesh calculate the centroid and plane of each face and generate 64 random radiuses of varying sizes using the cg.Box() method.
 >
 >6.Applies the Catmull-Clark subdivision algorithm to each box, creating a new mesh with more vertices and faces than the original mesh.
 >
@@ -34,11 +34,11 @@ Finally, the viewer.run() method is called, which opens the 3D viewer and displa
 
   ![image](result_screenshot_VF2.png) 
 
-  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces ( 2 subdivision steps)
+  * hyperbolic parabolic surface consists of polyhedrons with vertices & faces ( 2 subdivision steps)
   
   ![image](result_screenshot_VF6.png) 
 
-  * hyperbolic parabolic surface consist of polyhedrons with vertices & faces ( 6 subdivision steps)
+  * hyperbolic parabolic surface consists of polyhedrons with vertices & faces ( 6 subdivision steps)
   
 ▌Random Walk Capsule
 
@@ -53,5 +53,8 @@ The main loop generates 100 capsules by repeatedly calling the rw() function wit
   ![image](Random_Walk_Capsule_Demo1.png) 
   ![image](Random_Walk_Capsule_Demo2.png) 
 
-  * A sequence of capsules with random steps walking with different 'steer_prob' and 'acceleration' setting.
- 
+  * A sequence of capsules with random steps walking with different 'steer_prob' and 'acceleration' settings.
+    
+  ![image](light_painting_1.png) 
+  ![image](light_painting_2.png) 
+
