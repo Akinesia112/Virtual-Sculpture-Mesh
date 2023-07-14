@@ -79,33 +79,3 @@ save_path = os.path.join(path, "BrickWall.obj")
 
 # Save the combined mesh as an OBJ file
 o3d.io.write_triangle_mesh(save_path, all_boxes_mesh)
-
-# Automatically produce a video to record the combined mesh with 360 degrees camera view and zoom in
-# Create a window to visualize all_boxes_mesh
-view = o3d.visualization.VisualizerWithKeyCallback()
-view.create_window()
-# Add the all_boxes_mesh to the visualization
-view.add_geometry(all_boxes_mesh)
-
-# Set the camera view
-view_control = view.get_view_control()
-view_control.set_front([0, 0, -1])
-view_control.set_up([0, 1, 0])
-view_control.set_zoom(0.5)
-view_control.set_lookat([0, 0, 0])
-
-# Set video recording parameters
-width = 1280
-height = 720
-fps = 30
-duration = 10  # Duration of the video in seconds
-
-# Initialize the video writer
-#Save the video file in the path with the name BrickWall.mp4
-fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-save_path_video = os.path.join(path, "BrickWall.mp4")
-video_writer = cv2.VideoWriter(save_path_video, fourcc, fps, (width, height))
-
-# Release the video writer and close the visualization window
-video_writer.release()
-view.destroy_window()
